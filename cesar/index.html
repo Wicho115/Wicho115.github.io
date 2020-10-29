@@ -9,10 +9,10 @@
 <body>
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="home-tab" data-toggle="tab" href="https://wicho115.github.io" role="tab" aria-controls="home" aria-selected="true">Inicio</a>
+          <a class="nav-link" id="home-tab" data-toggle="tab" href="https://wicho115.github.io" role="tab" aria-controls="home" aria-selected="true">Inicio</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="profile-tab" data-toggle="tab" href="https://wicho115.github.io/cesar/index.html" role="tab" aria-controls="profile" aria-selected="false">Cesar</a>
+          <a class="nav-link active" id="profile-tab" data-toggle="tab" href="https://wicho115.github.io/cesar/index.html" role="tab" aria-controls="profile" aria-selected="false">Cesar</a>
         </li>
         <li class="nav-item" role="presentation">
           <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Viggenere</a>
@@ -32,7 +32,7 @@
         <div class="fform-group my-3 my-lg-0">
             <div class="form-group">
                 <label class="col-form-label col-form-label-lg" for="inputDefault">ingrese el numero de desplazamiento</label>
-                <input type="number" class="form-control" placeholder="# de desplazamiento" id="desplazamiento" onpaste="return false;" ondrop="return false;" min="1">
+                <input type="number" class="form-control" placeholder="# de desplazamiento" id="desplazamiento" pattern="^[0-9]+" onpaste="return false;" ondrop="return false;" min="1">
             </div>
         </div>            
 
