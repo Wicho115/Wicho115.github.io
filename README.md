@@ -17,6 +17,6 @@
 
     <div id="resultado"></div>
 
-    <script src="js/logica.js"></script>
+    <script src="https://wicho115.github.io/cesar/js/logica.js"></script>
 </body>
 </html>
