@@ -61,6 +61,6 @@ function codificar(){
 
 function decodificar(){
     let despla = Math.abs(parseInt(document.getElementById("desplazamiento").value));
-    document.getElementById("resultado").innerHTML = cesar.decode(
+    document.getElementById("resultado").value = cesar.decode(
         document.getElementById("cadena").value, (despla >= 27)?despla%27:despla)
 }
