@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Cesar</title>
+    <link rel="stylesheet" href="https://wicho115.github.io/cesar/css/bootstrap.min.css">
+</head>
+<body>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="home-tab" data-toggle="tab" href="https://wicho115.github.io" role="tab" aria-controls="home" aria-selected="true">Inicio</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="profile-tab" data-toggle="tab" href="https://wicho115.github.io/cesar/cesar.html" role="tab" aria-controls="profile" aria-selected="false">Cesar</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="https://wicho115.github.io/cesar/viggenere.html" role="tab" aria-controls="contact" aria-selected="false">Viggenere</a>
+        </li>
+    </ul>
+
+    <div class="jumbotron p-5 rounded-lg my-4 container">
+        <h1 class="display-4">Cifrado cesar</h1>
+
+        <div class="form-group my-3 my-lg-0">
+            <div class="form-group my-3">
+                <label class="col-form-label col-form-label-lg" for="inputDefault">Ingrese el texto que desea descifrar o cifrar</label>
+                <br>
+                <input type="text" class="form-control mr-sm-2" placeholder="Texto a cifrar o descifrar" id="cadena">
+            </div>
+        </div>
+        <div class="fform-group my-3 my-lg-0">
+            <div class="form-group">
+                <label class="col-form-label col-form-label-lg" for="inputDefault">ingrese el numero de desplazamiento</label>
+                <input type="number" class="form-control" placeholder="# de desplazamiento" id="desplazamiento" pattern="^[0-9]+" onpaste="return false;" ondrop="return false;" min="1">
+            </div>
+        </div>            
+
+        <hr class="my-3">
+    
+        <label class="col-form-label col-form-label-lg" for="inputLarge">Elige entre cifrar y descifrar</label>
+        <div class="form-inline my-3">
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" onclick="codificar()" role="button">Codificar</a>
+            </p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" onclick="decodificar()" role="button">Decodificar</a>
+            </p>
+        </div>   
+        <hr class="my-3">     
+        <textarea class="form-control" id="resultado" rows="3" readonly=""></textarea>
+    </div>
+    <!--
+    Ingrese su cadena de texto a cifrar o descifrar
+    <textarea id="cadena"></textarea>
+
+    Ingrese el numero de pocisiones a mover
+    <input type="number" id="desplazamiento" onpaste="return false;" ondrop="return false;" min="1">
+
+    <p><input type="button" value="Cifrar" onclick="codificar()">
+        <input type="button" value="Descifrar" onclick="decodificar()">
+    </p>
+
+    <div id="resultado"></div> -->
+
+    <script src="https://wicho115.github.io/cesar/js/logica.js"></script>
+</body>
+</html>
