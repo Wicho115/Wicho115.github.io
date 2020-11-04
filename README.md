@@ -12,7 +12,6 @@
           <a class="nav-link" id="profile-tab" data-toggle="tab" href="https://wicho115.github.io/cesar/index.html" role="tab" aria-controls="profile" aria-selected="false">Cesar</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Viggenere</a>
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="https://wicho115.github.io/cesar/viggenere.html" role="tab" aria-controls="contact" aria-selected="false">Viggenere</a>
         </li>
     </ul>
-<a href="https://wicho115.github.io/cesar/index.html"> Ejercicio cesar </a>
