@@ -49,9 +49,9 @@ let viggenere =(function(){
         }
     };
 })();
-let prueba = abc;
 //realizar una funcion que se encargue de codificar y decodificar
 function codificar(){
+    let prueba = "abc";
     let clave = prueba.toCharArray();
     let textoCodificado = "";
     let indiceCharClave = 0;
