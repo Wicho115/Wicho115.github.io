@@ -52,10 +52,10 @@ let viggenere =(function(){
 //realizar una funcion que se encargue de codificar y decodificar
 function codificar(){
     let prueba = "abc";
-    let clave = prueba.toCharArray();
+    let clave = prueba.split('');
     let textoCodificado = "";
     let indiceCharClave = 0;
-    let charArryTxtPlano = document.getElementById("cadena").value.toCharArray();
+    let charArryTxtPlano = document.getElementById("cadena").value.split('');
     for (let i = 0; i < charArryTxtPlano.length; i++) { 
         let despla = obtenerIndexClave(clave[indiceCharClave]);
         let charTextoPlano = charArryTxtPlano[i]
