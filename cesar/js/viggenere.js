@@ -4,11 +4,10 @@ let viggenere =(function(){
 
     let doStaff = function(txt, desp, action){
         let replace = (function(){
-            //mi abecedario
+            
             let abc = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z'];
             let l = abc.length;
-
-            //funcion que se encarga de cifrar
+            
             return function(c){
                 let i = abc.indexOf(c.toLowerCase());
 
@@ -21,11 +20,9 @@ let viggenere =(function(){
                         pos += desp;
                         pos = (pos >= l)?pos-l:pos;
                         //pos -= (pos >= 1)?1:0;
-                    }else{
-                        //retroceder
+                    }else{                        
                         pos -= desp;
-                        pos = (pos < 0)?l+pos:pos;
-                        //pos += (pos < 0)?1:0;
+                        pos = (pos < 0)?l+pos:pos;                                                
                     }
                     return abc[pos];
                 }
@@ -33,13 +30,13 @@ let viggenere =(function(){
             };
         })();
 
-        //aqui tenemos que hacer el match
+        
         let re = (/[a-z-ñÑ]/ig);
         return String(txt).replace(re, function(match){
             return replace(match);
         });
     };
-    //ahora falta saber si quiero cifrar o descifrar
+    
     return{
         encode : function(txt,desp){
             return doStaff(txt,desp, true);
@@ -49,33 +46,64 @@ let viggenere =(function(){
         }
     };
 })();
-//realizar una funcion que se encargue de codificar y decodificar
-function codificar(){
-    let prueba = "abc";
-    let clave = prueba.split('');
+
+function codificar(txtPlano, clave){     
     let textoCodificado = "";
     let indiceCharClave = 0;
-    let charArryTxtPlano = document.getElementById("cadena").value.split('');
+    let charArryTxtPlano = txtPlano.split('');
     for (let i = 0; i < charArryTxtPlano.length; i++) { 
-        let despla = obtenerIndexClave(clave[indiceCharClave]);
-        let charTextoPlano = charArryTxtPlano[i]
+        let despla = obtenerIndexClave(clave.charAt(indiceCharClave));
+        let charTextoPlano = charArryTxtPlano[i];
         textoCodificado += viggenere.encode(charTextoPlano, (despla >= 27)?despla%27:despla);
-        if(indiceCharClave >= clave.length){
-            indiceCharClave = 0;
-        }else{
-            indiceCharClave++
-        }        
+        indiceCharClave++;
+        indiceCharClave = (indiceCharClave >= clave.length)? 0 : indiceCharClave;
     }    
     document.getElementById("resultado").value = textoCodificado;
 }
 
-function decodificar(){
-    let despla = Math.abs(parseInt(document.getElementById("desplazamiento").value));
-    document.getElementById("resultado").value = viggenere.decode(
-        document.getElementById("cadena").value, (despla >= 27)?despla%27:despla)
+function decodificar(txtCodificado,clave){
+    let textoDecodificado = "";
+    let indiceCharClave = 0;
+    let charArryTxtCodificado = txtCodificado.split('');
+    for (let i = 0; i < charArryTxtCodificado.length; i++) {        
+        let despla = obtenerIndexClave(clave.charAt(indiceCharClave));
+        let charTextoCodificado = charArryTxtCodificado[i];
+        textoDecodificado += viggenere.decode(charTextoCodificado, (despla >= 27)?despla%27:despla);
+        indiceCharClave++;
+        indiceCharClave = (indiceCharClave >= clave.length)? 0 : indiceCharClave;
+    }
+    document.getElementById("resultado").value = textoDecodificado;
 }
 
 function obtenerIndexClave(charClave){
     let abc = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z'];
-    return abc.indexOf(charClave.toLowerCase()) + 1;
+    return abc.indexOf(charClave.toLowerCase());
+}
+
+function Validardecodificar(){
+    let clave = document.getElementById("clave").value;
+    let txtCodificado = document.getElementById("cadena2").value;
+
+    if(clave.length > txtCodificado.length){ 
+        alert("La clave es más grande que el texto entregado");
+    }else{
+        decodificar(txtCodificado,clave);
+    }
+}
+
+function Validarcodificar(){
+    let clave = document.getElementById("clave").value;
+    let txtPlano = document.getElementById("cadena2").value;
+
+    if(clave.length > txtPlano.length){
+        alert("La clave es más grande que el texto entregado");
+    }else{
+        codificar(txtPlano,clave);
+    }
+}
+
+function ResetText(){    
+    document.getElementById("clave").value = "";
+    document.getElementById("cadena2").value = "";
+    document.getElementById("resultado").value = "";
 }
