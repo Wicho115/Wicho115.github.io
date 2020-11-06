@@ -60,7 +60,11 @@ function codificar(){
         let despla = obtenerIndexClave(clave[indiceCharClave]);
         let charTextoPlano = charArryTxtPlano[i]
         textoCodificado += viggenere.encode(charTextoPlano, (despla >= 27)?despla%27:despla);
-        indiceCharClave = (indiceCharClave >= clave.length)? 0: indiceCharClave++;
+        if(indiceCharClave >= clave.length){
+            indiceCharClave = 0;
+        }else{
+            indiceCharClave++
+        }        
     }    
     document.getElementById("resultado").value = textoCodificado;
 }
