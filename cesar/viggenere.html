@@ -20,13 +20,13 @@
     </ul>
 
     <div class="jumbotron p-5 rounded-lg my-4 container">
-        <h1 class="display-4">Cifrado cesar</h1>
+        <h1 class="display-4">Cifrado Viggenere</h1>
 
         <div class="form-group my-3 my-lg-0">
             <div class="form-group my-3">
                 <label class="col-form-label col-form-label-lg" for="inputDefault">Ingrese el texto que desea descifrar o cifrar</label>
                 <br>
-                <input type="text" class="form-control mr-sm-2" placeholder="Texto a cifrar o descifrar" id="cadena">
+                <input type="text" class="form-control mr-sm-2" placeholder="Texto a cifrar o descifrar" id="cadena2">
             </div>
         </div>
         <div class="form-group my-3 my-lg-0">
@@ -41,16 +41,19 @@
         <label class="col-form-label col-form-label-lg" for="inputLarge">Elige entre cifrar y descifrar</label>
         <div class="form-inline my-3">
             <p class="lead">
-                <a class="btn btn-primary btn-lg" onclick="codificar()" role="button">Codificar</a>
+                <a class="btn btn-primary btn-lg" onclick="Validarcodificar()" role="button">Codificar</a>
             </p>
             <p class="lead">
-                <a class="btn btn-primary btn-lg" onclick="decodificar()" role="button">Decodificar</a>
+                <a class="btn btn-primary btn-lg" onclick="Validardecodificar()" role="button">Decodificar</a>
+            </p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" onclick="ResetText()" role="button">Borrar</a>
             </p>
         </div>   
         <hr class="my-3">     
         <textarea class="form-control" id="resultado" rows="3" readonly=""></textarea>
     </div>
 
-    <script src="https://wicho115.github.io/cesar/js/viggenere.js"></script>
+    <script src="https://wicho115.github.io/cesar/js/viggenere.js"></script>    
 </body>
 </html>
