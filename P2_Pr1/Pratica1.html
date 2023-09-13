@@ -1,12 +1,363 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="My little pony page" content="Esta es una pagina fan de my litller pony">
+    <title>My Little Pony</title>
+
+    <!-- ICON -->
+    <link rel="shortcut icon"
+        href="https://media.discordapp.net/attachments/1025054668038090855/1148992591363313725/MyLittlePonyLogo.png?width=468&height=468"
+        type="image/x-icon">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+    
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<!-- Styles -->
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    Hola Mundo
+
+    <header class="header" id="inicio">
+
+        <nav class="nav-cont fixed-top">
+            <section class="row align-items-center section-box text-alignment">
+                <article class="article-box col">
+                    <img class="img-indice-logo" src="./img/MLP Logo.png" alt="MLP Logo">
+                </article>
+                <article class="article-box col">
+                    <a class="white-ref link-light" href="#personajes">
+                        <img class="img-indice" src="./img/Applejack Btn.jpg" alt="Applejack">
+                        Personajes
+                    </a>
+                </article>
+                <article class="article-box col">
+                    <a class="white-ref link-light" href="#datos-curiosos">
+                        <img class="img-indice" src="./img/Twilight Btn.jpg" alt="Twilight Sparkle">
+                        Datos curiosos
+                    </a>
+                </article>
+                <article class="article-box col">
+                    <a class="white-ref link-light" href="#episodios">
+                        <img class="img-indice" src="./img/Rainbow Btn.jpg" alt="Rainbow Dash">
+                        Episodios Fav
+                    </a>
+                </article>
+                <article class="article-box col">
+                    <a class="white-ref link-light" href="#mejor-momento">
+                        <img class="img-indice" src="./img/Pinkie Btn.jpg" alt="Pinkie Pie">
+                        Mejor momento
+                    </a>
+                </article>
+            </section>
+        </nav>
+
+        <div class="navSep"></div>
+        
+        <center><div class="separador"></div></center>
+
+        <h2 class="inline-header">My Little Pony</h2>
+        <h4 class="inline-header">Luis Alfonso Martin Velázquez</h4>
+
+    </header>
+
+    <center><div class="separador"></div></center>
+
+    <h2 class="inline-header" id="personajes">Personajes</h2>
+    <section class="text-alignment">
+        <p>En my little pony, la serie se centra en 6 protagonistas, las cuales cada una tiene una cualidad diferente
+            que
+            las hace especiales, esto se enlaza a una conexion que tienen con el sistema de magia de este mundo, el cual
+            es
+            conocido como <b>Los Elementos de la armonia</b>.</p>
+        <p>Estos elementos son de suma importancia para la serie, pues nuetsyras protagonistas son las representantes de
+            cada uno de los 6 elementos de la armonia, esto hace que el grupo sea muy colorido y completo. En la
+            siguiente
+            tabla podrás conocer a cada una de las ponys protagonista y que elemento representan.</p>
+
+        <table class="tabla table-bordered">
+            <tr class="tabla-header-align">
+                <th>Pony</th>
+                <th>Nombre</th>
+                <th>¿Quien es?</th>
+                <th>Elemento de la armonia</th>
+            </tr>
+            <tr>
+                <td><img class="tabla-img" src="./img/Twilight Icon.png" alt="Twilight"></td>
+                <td class="td-etiqueta">Twilight Sparkle</td>
+                <td class="td-texto">
+                    <div class="text-alignment">
+                        Twilight Sparkle es la cerebro del grupo, es la mas fiel alumna de Celestia
+                        y es la princesa de la amistad, ella vive en el Castillo de Cristal, el cual es la base
+                        principal de las <i>Mane Six</i>
+                    </div>
+                </td>
+                <td class="td-etiqueta twilight">
+                    <details>
+                        <summary class="detail-title">Magia</summary>
+                        <p class="summary-alignment">Twilight, al ser tener poderes con los cuales puede hacer magia,
+                            llega a la conclusión que ella represneta el elemento de la Magia</p>
+                    </details>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="tabla-img" src="./img/Rainbow Icon.png" alt="Rainbow Dash"></td>
+                <td class="td-etiqueta">Rainbow Dash</td>
+                <td class="td-texto">
+                    <div class="text-alignment">
+                        Rainbow Dash es la intrépida del grupo, es una Wonderbolt y se dedica a
+                        ser una maestra para que las nuevas generaciones puedan ser tan veloces como ella, ella tiene un
+                        dicho y dice que todo es 20% más genial cuando eres veloz
+                    </div>
+                </td>
+                <td class="td-etiqueta rainbow">
+                    <details>
+                        <summary class="detail-title">Lealtad</summary>
+                        <p class="summary-alignment">En el camino al Bosque Everfree, Twilight puede apreciar que
+                            Rainbow Dash era leal a ellas, por lo que representaba el elemento de Lealtad</p>
+                    </details>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="tabla-img" src="./img/Applejack Icon.png" alt="Applejack"></td>
+                <td class="td-etiqueta">Applejack</td>
+                <td class="td-texto">
+                    <div class="text-alignment">
+                        Applejack es una granjera que se dedica a cultivar y vender manzanas en todas sus
+                        presentaciones, ama lo que hace y es una pony muy honesta con lo que dice y hace, una pony
+                        fuerte de campo que dará todo por sus amigas para que nada salga mal.
+                    </div>
+                </td>
+                <td class="td-etiqueta applejack">
+                    <details>
+                        <summary class="detail-title">Honestidad</summary>
+                        <p class="summary-alignment">En el camino al Bosque Everfree, Twilight puede apreciar que
+                            Applejack era honesta y confiable, por lo que representaba el elemento de Honestidad</p>
+                    </details>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="tabla-img" src="./img/Pinkie Icon.png" alt="Pinkie Pie"></td>
+                <td class="td-etiqueta">Pinkie Pie</td>
+                <td class="td-texto">
+                    <div class="text-alignment">
+                        Pinkie Pie es una pony divertida y alegre que le encanta la fiesta y le fascina la
+                        diversion con amigos y nuevos conocidos, le gusta conocer siempre a gente nueva en el pueblo, es
+                        la mejor organizadora de fiestas de toda equestria.
+                    </div>
+                </td>
+                <td class="td-etiqueta pinkie">
+                    <details>
+                        <summary class="detail-title">Risa</summary>
+                        <p class="summary-alignment">En el camino al Bosque Everfree, Twilight puede apreciar que Pinkie
+                            Pie era graciosa, por lo que representaba el elemento de Risa</p>
+                    </details>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="tabla-img" src="./img/Fluttershy Icon.png" alt="Fluttershy"></td>
+                <td class="td-etiqueta">Fluttershy</td>
+                <td class="td-texto">
+                    <div class="text-alignment">
+                        Fluttershy es una pony muy timida y cuidadosa con sus amigos, ella es amiga de
+                        todos los animales y tiene una graja en donde cuida de todos ellos, ella puede llegar a ser una
+                        pony ruda si tocan un tema sensible para ella.
+                    </div>
+                </td>
+                <td class="td-etiqueta fluttershy">
+                    <details>
+                        <summary class="detail-title">Amabilidad</summary>
+                        <p class="summary-alignment">En el camino al Bosque Everfree, Twilight puede apreciar que
+                            Fluttershy era amable y compasiva, por lo que representaba el elemento de Amabilidad</p>
+                    </details>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="tabla-img" src="./img/Rarity Icon.png" alt="Rarity"></td>
+                <td class="td-etiqueta">Rarity</td>
+                <td class="td-texto">
+                    <div class="text-alignment">
+                        Rarity es una unicornio que tiene una boutique en ponyville y canterlot, es muy
+                        propia en su manera de hablar y conocer acerca del mundo de la moda, ella le encanta que sus
+                        amigas vistan de buena manera y le desgrada que los ponys de tierra le ensucien todo lo que
+                        tocan.
+                    </div>
+                </td>
+                <td class="td-etiqueta rarity">
+                    <details>
+                        <summary class="detail-title">Generosidad</summary>
+                        <p class="summary-alignment">En el camino al Bosque Everfree, Twilight puede apreciar que Rarity
+                            era generosa, por lo que representaba el elemento de Generosidad</p>
+                    </details>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <center><div class="separador"></div></center>
+
+    <h2 class="inline-header" id="datos-curiosos">10 Datos curiosos</h2>
+    <section class="text-alignment">
+        <ol>
+            <li>
+                Las primeras 2 tenporadas de la serie fueron producidas por Lauren Faust, ella es la creadora de igual
+                manera de amigos imaginarios
+            </li>
+            <li>
+                Lauren Faust está casada con Craig McCracken, creador de Las Chicas Superpoderosas, y con quien colabora
+                en cada uno de sus proyectos.
+            </li>
+            <li>
+                En uno de los primeros episodios de la serie tenemos una revelación que pocos recuerdan: Fluttershy dice
+                que es un año mayor que Pinkie pie.
+            </li>
+            <li>
+                El príncipe Blueblood no es un alicornio como el resto de la realeza, debido a que los ponis masculinos
+                no pueden ser alicornios.
+            </li>
+            <li>
+                Dentro de los villanos a los que los ponis deben enfrentarse tenemos a dos que son los únicos no pony.
+                Uno es el centauro Lord Tirek y el otro es el híbrido Discord, que es un Draconequus: cabeza de poni y
+                cuerpo hecho de toda clase de otros animales. Podemos ver más de Tirek en el <a class="white-ref link-light"
+                    href="#mejor-momento">Mejor Momento</a>
+            </li>
+            <li>
+                El nombre completo de Pinkie pie es Pinkamena Diane Pie, y es el único pony de su familia que tiene un
+                peinado distinto.
+            </li>
+            <li>
+                El director de la serie, Jayson Thiessen, comentó que Discord es creación directa de Lauren Faust. Está,
+                en parte, inspirado en John de Lancie, Q en Star Trek.
+            </li>
+            <li>
+                En la serie tenemos el grupo de las Cutie Marks Crusaders, fundado por Apple Bloom, Sweetie Belle y
+                Scootaloo. Ellas están en uno de los <a class="white-ref link-light" href="#episodios">episodios</a> que enlisté
+                más abajo.
+            </li>
+            <li>
+                El director de la serie, Jayson Thiessen, comentó que Discord es creación directa de Lauren Faust. Está,
+                en parte, inspirado en John de Lancie, Q en Star Trek.
+            </li>
+            <li>
+                La personalidad de Fluttershy está basada en la personalidad de Lauren Faust cuando era niña.
+            </li>
+        </ol>
+    </section>
+    <br>
+
+    <center><div class="separador"></div></center>
+
+    <h2 class="inline-header" id="episodios">Episodios</h2>
+    <section class="text-alignment">
+        <p>Esta es una lista de mis episodios favoritos de la serie, en este caso el motivo de mi agrado a estos
+            episodios
+            son puramente musicales, es decir me gusta el episodio por que hay una cancion en especifico de ese episodio
+            que
+            me encanta. Aqui la lista:</p>
+        <ul>
+            <li>Winter Wrap Up</li>
+            <li>Babs Seed</li>
+            <li>A Friend in Deed</li>
+            <li>Pinkie Apple Pie</li>
+            <li>Bats!</li>
+        </ul>
+    </section>
+
+    <center><div class="separador"></div></center>
+
+    <h2 id="mejor-momento" class="inline-header">Mejor Momento</h2>
+    <br>
+    <section class="text-alignment momento-box row align-items-center">
+        <article class="video-box col">
+            <center>
+                <p class="inline-side-text">Para mi el mejor momento de la serie sin duda es el final de la tenmporada
+                    4, es
+                    un final unico y de acción el cual te deja al filo del asiento mientras ves el episodio, este
+                    episodio
+                    en generla es bastante frenetico y hasta en algunos momento violentos. La pelea final de Twilight
+                    conytra tirek es una de las cosas mas épicas que he podido presenciar, es por eso que esta es la
+                    mejor
+                    escena que les puedo mostrar.</p>
+            </center>
+        </article>
+        <article class="video-box col">
+            <center>
+                <iframe class="video" width="560" height="315"
+                    src="https://www.youtube.com/embed/TQlaBeWNNhw?si=GC_IKTZSIXDOxyt5" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </center>
+        </article>
+    </section>
+    <br>
+
+    <center><div class="separador"></div></center>
+
+    <section class="row align-items-center bottom-section-box text-alignment">
+        <article class="bottom-article-box col">
+            <a class="white-ref link-light" href="#inicio">
+                <img class="img-indice" src="./img/Rarity Btn.jpg" alt="Applejack">
+                Volver a Inicio
+            </a>
+        </article>
+        <article class="bottom-article-box col">
+            <a class="white-ref link-light" href="https://www.youtube.com/watch?v=SdDOtcWsqXM&ab_channel=SpikeSparkle"
+                target="_blank">
+                <img class="img-indice" src="./img/Fluttershy Btn.jpg" alt="Applejack">
+                Sorpresa
+            </a>
+        </article>
+    </section>
+
+    <center><div class="separador"></div></center>
+
+    <footer class="footer text-alignment">
+        <b>Referencias:</b>
+        <ul>
+            <li>
+                <a class="white-ref link-light" href="https://www.youtube.com/watch?v=TQlaBeWNNhw">Twilight vs Tirek - Flutter
+                    525</a>
+            </li>
+            <li>
+                <a class="white-ref link-light"
+                    href="https://spoilertime.com/18-curiosidades-que-debes-saber-sobre-la-magia-de-la-amistad/">Curiosidades
+                    my little pony - spoilertime</a>
+            </li>
+            <li>
+                <a class="white-ref link-light" href="https://mlp.fandom.com/es/wiki/Elementos_de_la_Armon%C3%ADa">Los elementos de
+                    la armonia - MLP Fandom</a>
+            </li>
+            <li>
+                <a class="white-ref link-light"
+                    href="https://www.youloveit.com/cartoons/463-cute-brite-and-hd-quality-icons-with-my-little-pony-the-movie-characters-for-all-your-social-profiles.html">Pony
+                    Icons</a>
+            </li>
+            <li>
+                <a class="white-ref link-light"
+                    href="https://knowyourmeme.com/photos/564984-my-little-pony-friendship-is-magic">Pony Botones</a>
+            </li>
+        </ul>
+    </footer>
+
+    <center><div class="separador"></div></center>
+
+    <br>
+
 </body>
+
 </html>
