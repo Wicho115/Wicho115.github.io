@@ -9,5 +9,7 @@
 ## [Parcial 2 - Practica 5/JavaScript File](https://wicho115.github.io/P2_Pr5/main.js)
 ## [Parcial 2 - Practica 6](https://wicho115.github.io/P2_Pr6/index.html)
 ## [Parcial 2 - Practica 6/JavaScript File](https://wicho115.github.io/P2_Pr6/main.js)
+## [Parcial 2 - Practica 7](https://wicho115.github.io/P2_Pr7/index.html)
+## [Parcial 2 - Practica 7/JavaScript File](https://wicho115.github.io/P2_Pr7/main.js)
 
 ## [Sitio - Github Pages](https://wicho115.github.io/)
