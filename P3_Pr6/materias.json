@@ -1,0 +1,29 @@
+{
+    "materias" : [
+        {
+            "Materia" : "Proyecto semestral",
+            "Docente" : "Rodrigo Saco",
+            "Descripcion" : "Estamos realizando un proyecto en vr donde se juega como un cazador de bestias y tienes que conseguir matar a todos los enemigos antes de que te maten a ti"
+        },
+        {
+            "Materia" : "Simulacion Fisica para Videojuegos",
+            "Docente" : "Ricardo Rodriguez",
+            "Descripcion" : "Estamos realizando un videojuego basado en fisicas, donde tienes que meter a unos robots con una pistola, directo a una carrilla para avanzar de nivel"
+        },
+        {
+            "Materia" : "Desarrollo de interfaces para Apps",
+            "Docente" : "Diana Rodriguez",
+            "Descripcion" : "Estamos mejorando un proyecto que se realizo con anterioridad en el semestre pasado, para darle mejores graficos y cosas varias"
+        },
+        {
+            "Materia" : "Desarrollo web",
+            "Docente" : "Jonathan Miranda",
+            "Descripcion" : "Estamos Aprendiendo a hacer paginas web y obtener datos mediante fetch, para asi poder rellenar toda la informacion necesaria en un formulario o en una pagina que se cree a partir de un documento"
+        },
+        {
+            "Materia" : "Inteligencia Artificial",
+            "Docente" : "Juan José Lopez",
+            "Descripcion" : "Estamos realizando un sistema de reconocer el camino mas corto para llegar a un punto en especifico en un grid rectangular"
+        }
+    ]
+}
