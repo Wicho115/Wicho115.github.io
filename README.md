@@ -27,5 +27,7 @@
 
 ## [Parcial 3 - Practica 6](https://wicho115.github.io/P3_Pr6/index.html)
 ## [Parcial 3 - Practica 6/JavaScript File](https://wicho115.github.io/P3_Pr6/main.js)
+## [Parcial 3 - Practica 7](https://wicho115.github.io/P3_Pr7/index.html)
+## [Parcial 3 - Practica 7/JavaScript File](https://wicho115.github.io/P3_Pr7/main.js)
 
 ## [Sitio - Github Pages](https://wicho115.github.io/)
